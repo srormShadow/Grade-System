@@ -1,0 +1,48 @@
+#include<stdio.h>
+
+int main()
+{
+	char name[30];
+	int english,tamil, maths,social,computer;
+	int total;
+	
+	printf("enter the students name :");
+	scanf("%s",name);
+	printf("enter the marks obtained by %s below \n",name);
+	printf("enter english mark\n");
+	scanf("%d",&english);
+	printf("enter tamil mark\n");
+	scanf("%d",&tamil);
+	printf("enter maths mark\n");
+	scanf("%d",&maths);
+	printf("enter social mark\n");
+	scanf("%d",&social);
+	printf("enter computer mark\n");
+	scanf("%d",&computer);
+	
+	total = maths+computer+english+tamil+social;
+	total = total /5;
+	
+	printf("the total mark is %d \n", total);
+	
+	if (total >=85 && total <=100)
+	{
+		printf("your grade is A");
+	}
+		if (total >=70 && total <=84)
+	{
+		printf("your grade is B");
+	}
+		if (total >=55 && total <=69)
+	{
+		printf("your grade is C");
+	}
+		if (total >=40 && total <=54)
+	{
+		printf("your grade is D");
+	}
+		if (total<40)
+	{
+		printf("your grade is F");
+	}
+}
